@@ -1,0 +1,19 @@
+.con{
+    position: relative;
+}
+.con >img {
+    width: 100%;
+}
+body {
+    background-color: #181824;
+    color: white;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+.image{
+    margin-top: 20px;
+    position: absolute;
+    top: 50%;
+    right: 50%;
+}
