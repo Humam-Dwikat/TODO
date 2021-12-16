@@ -1,7 +1,10 @@
-.con{
+
+
+
+.container{
     position: relative;
 }
-.con >img {
+.container >img {
     width: 100%;
 }
 body {
@@ -10,10 +13,12 @@ body {
     margin: 0;
     padding: 0;
     text-align: center;
+   
 }
 .image{
     margin-top: 20px;
-    position: absolute;
+    position:absolute;
     top: 50%;
     right: 50%;
 }
+ 
