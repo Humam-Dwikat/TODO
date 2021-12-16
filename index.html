@@ -6,36 +6,55 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style/main.css">
     <title>Document</title>
+    <script src="https://kit.fontawesome.com/42e8151cf5.js" crossorigin="anonymous"></script>
 </head>
-<body>
-    <div class="con">
+<body >
+
+    <div class="container">
         <img src="img/bakeground-img.png">
         <div class="image">
             <h1>TODO</h1>
-            <img src="icon-sun.svg" alt="">
-        </div>
+           
+            <i class="fas fa-sun"></i>
+                   </div>
         <div class="create">
-            <input type="text" class="addNewTask" placeholder="Create new to do">
+            
+            <input type="text" class="addNewTask compleat" id="input"  placeholder="Create new to do">
+            <button>add</button>
         </div>
+
         <div class="tasks-list">
-             <div class="task">
-                <input type="radio">
-                <p class="">Clean the bed room</p>
+             <div id="task" >
+                 
+                <input type="checkbox" >
+                
             </div>
            
         </div>
 
+  
+   <div id="filter" class="filters" >
+       <div class="functions">
+   <div class="filter" id="F">
+       <div class="function_count">
+       <p class="filter"><span class="counter"  >0</span> item left</p>
+    </div>
+   <div class="three_function">
+       <p id="All"class="filter" >all</p>
+       <p id="active" class="filter">active</p>
+       <p id="complete" class="filter">complete</p>
+    </div>
+    <div class="clear_function">
+       <p id="clear" class="filter">clear completed</p>
+    </div>
+    </div>
+</div>
    </div>
-   <div class="filter">
-       <p><span class="counter">0</span> item left</p>
-       <p id="All" >all</p>
-       <p id="active">active</p>
-       <p id="complete">complete</p>
-       <p id="clear">clear completed</p>
-   </div>
+</div>
    <footer>
     <p>Drag and Drop to reorder list</p>
-    </footer>
-   <script src="script.js"></script>
+    </footer> 
+    <script src="/scripts/app.js"></script>
+   
 </body>
 </html>
