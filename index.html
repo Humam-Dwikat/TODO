@@ -8,53 +8,43 @@
     <title>Document</title>
     <script src="https://kit.fontawesome.com/42e8151cf5.js" crossorigin="anonymous"></script>
 </head>
-<body >
-
+<body>
     <div class="container">
-        <img src="img/bakeground-img.png">
+        <img src="img/background-img.png" alt="">
         <div class="image">
             <h1>TODO</h1>
-           
             <i class="fas fa-sun"></i>
-                   </div>
+        </div>
         <div class="create">
-            
-            <input type="text" class="addNewTask compleat" id="input"  placeholder="Create new to do">
-            <button>add</button>
+            <input type="text" class="addNewTask complete" id="input" placeholder="Create new to do">
+            <button>Add</button>
         </div>
-
         <div class="tasks-list">
-             <div id="task" >
-                 
-                <input type="checkbox" >
-                
+            <div id="task">
+                <input type="checkbox">
             </div>
-           
         </div>
-
-  
-   <div id="filter" class="filters" >
-       <div class="functions">
-   <div class="filter" id="F">
-       <div class="function_count">
-       <p class="filter"><span class="counter"  >0</span> item left</p>
+        <div id="filter" class="filters">
+            <div class="functions">
+                <div class="filter" id="F">
+                    <div class="function_count">
+                        <p class="filter"><span class="counter">0&nbsp;</span>item left</p>
+                    </div>
+                    <div class="three_function">
+                        <p id="All" class="filter">all</p>
+                        <p id="active" class="filter">active</p>
+                        <p id="complete" class="filter">complete</p>
+                    </div>
+                    <div class="clear_function">
+                        <p id="clear" class="filter">clear completed</p>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
-   <div class="three_function">
-       <p id="All"class="filter" >all</p>
-       <p id="active" class="filter">active</p>
-       <p id="complete" class="filter">complete</p>
-    </div>
-    <div class="clear_function">
-       <p id="clear" class="filter">clear completed</p>
-    </div>
-    </div>
-</div>
-   </div>
-</div>
-   <footer>
-    <p>Drag and Drop to reorder list</p>
-    </footer> 
+    <footer>
+        <p>Drag and Drop to reorder list</p>
+    </footer>
     <script src="/scripts/app.js"></script>
-   
 </body>
 </html>

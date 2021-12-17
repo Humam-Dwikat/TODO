@@ -1,6 +1,3 @@
-
-
-
 .container{
     position: relative;
 }
@@ -12,8 +9,7 @@ body {
     color: white;
     margin: 0;
     padding: 0;
-    text-align: center;
-   
+    text-align: center;   
 }
 .image{
     margin-top: 20px;
@@ -23,7 +19,6 @@ body {
 }
 .functions{/*size the font in the div founctions*/
     font-size: 80%;
-   
 }
 .filter{/* put border and background color to box founction*/
     display:inline-flex;
@@ -31,10 +26,10 @@ body {
     background-color: #25273c;
     border-radius: 8px;
 }
-
-.three_function{/* put spaces between the founctions name
-    */
+.three_function{/* put spaces between the founctions name*/
     margin-left: 30px;
-    margin-right: 20px;
-    
+    margin-right: 20px;   
+}
+input{
+    background-color: #25273c;
 }
