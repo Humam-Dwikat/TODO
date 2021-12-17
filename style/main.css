@@ -33,3 +33,22 @@ body {
 input{
     background-color: #25273c;
 }
+
+
+
+.sun{
+    margin: -1px;
+    padding: 20px;
+    margin-left: 219px;
+    color: white;
+
+}
+
+
+
+.light_mode{
+    background-color:white;
+    color:black;
+
+
+}
