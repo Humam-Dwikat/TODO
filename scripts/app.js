@@ -13,7 +13,7 @@ addTextFromInput.addEventListener("keypress", (e) => { //when users press on th 
 			 tasks.push(creat_task(addTextFromInput.value));//take the task from the creat_task and put it in the tasks
 	  }
 	    addTextFromInput.value = "";//when the user press Enter the input box = NULL
-	}
+	}countActiveTask();
 });
 const shapeForChangeMode =document.getElementById("change_mode"); 
 
@@ -31,5 +31,21 @@ shapeForChangeMode.addEventListener("click",(e)=>{
 
 
 });
+function countActiveTask() {
+   
+    let counter = document.querySelectorAll('.counter');
+    let CounterTasks = 0;
+
+    for (let i = 0; i < tasks.length; i++) {
+        if (!tasks[i].iscompleted) {
+            CounterTasks += 1;
+        }
+		
+    }
+    for (let j = 0; j < counter.length; j++) {
+        counter[j].innerHTML = CounterTasks;
+    }
+
+}
 
 
