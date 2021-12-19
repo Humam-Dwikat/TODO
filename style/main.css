@@ -27,28 +27,23 @@ body {
     top: 50%;
     right: 50%;
 }
-.functions{/*size the font in the div founctions*/
-    font-size: 80%;
-}
+
 .filter{/* put border and background color to box founction*/
     display:inline-flex;
     border:2px solid #25273c;
     background-color: #25273c;
     border-radius: 8px;
-    
+    font-size: 90%;
+
 }
 .three_function{/* put spaces between the founctions name*/
     margin-left: 30px;
     margin-right: 20px;  
-    height:237px ;
-    width:336px;
     background-color: #25273c;
 }
 input{
     background-color: #25273c;
 }
-
-
 
 .sun{
     margin: -1px;
@@ -57,8 +52,6 @@ input{
     color: white;
 
 }
-
-
 
 .light_mode{
     background-color:white;
