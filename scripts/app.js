@@ -33,7 +33,7 @@ shapeForChangeMode.addEventListener("click",()=>{
 });
 function countActiveTask() {
    
-    let counter = document.querySelectorAll('.counter');
+    let counter = document.querySelectorAll(".counter");
     let CounterTasks = 0;
 
     for (let i = 0; i < tasks.length; i++) {
@@ -46,6 +46,20 @@ function countActiveTask() {
         counter[j].innerHTML = CounterTasks;
     }
 
-}
+}function clean(){
+
+for(let i=0;tasks.length;i++){
+    let clear =[];
+    if(tasks[i].iscompleted=true)
+    clear=tasks[i];
+    
+}}
+
+const taskCompleted=document.getElementById("clear");
+taskCompleted.addEventListener("click",clean);
+
+
+
+
 
 
