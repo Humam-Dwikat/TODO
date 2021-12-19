@@ -17,7 +17,7 @@ addTextFromInput.addEventListener("keypress", (e) => { //when users press on th 
 });
 const shapeForChangeMode =document.getElementById("change_mode"); 
 
-shapeForChangeMode.addEventListener("click",(e)=>{
+shapeForChangeMode.addEventListener("click",()=>{
 	let shape =document.body;
     shape.classList.toggle("light_mode");
     console.log("holle");
