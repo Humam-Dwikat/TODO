@@ -15,6 +15,7 @@ addTextFromInput.addEventListener("keypress", (e) => { //when users press on th 
 	    addTextFromInput.value = "";//when the user press Enter the input box = NULL
 	}countActiveTask();
 });
+
 const shapeForChangeMode =document.getElementById("change_mode"); 
 
 shapeForChangeMode.addEventListener("click",()=>{
@@ -46,13 +47,16 @@ function countActiveTask() {
         counter[j].innerHTML = CounterTasks;
     }
 
-}function clean(){
+}
+function clean(){
 
 for(let i=0;tasks.length;i++){
-    let clear =[];
-    if(tasks[i].iscompleted=true)
-    clear=tasks[i];
     
+    if(tasks[i].iscompleted){
+         delete tasks[i];
+    
+}
+
 }}
 
 const taskCompleted=document.getElementById("clear");
