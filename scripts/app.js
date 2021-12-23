@@ -2,7 +2,7 @@ let tasks = [];
 function creat_task(text){//this fuction take text and return task
 	let task={
 		"text":text,
-		"iscompleted":false
+		"iscompleted":"false"
 	}
 	return task;
 }
@@ -11,9 +11,26 @@ addTextFromInput.addEventListener("keypress", (e) => { //when users press on th 
 	if (e.key == "Enter") {// if user press Enter (true)
 	  if (addTextFromInput.value != "") {//if the addTextFromInput.value not NULL (true) 
 			 tasks.push(creat_task(addTextFromInput.value));//take the task from the creat_task and put it in the tasks
+             let div = document.getElementById('task');
+             let p = document.createElement('p');
+             p.innerHTML = addTextFromInput.value;
+             div.appendChild(p);
 	  }
 	    addTextFromInput.value = "";//when the user press Enter the input box = NULL
 	}countActiveTask();
+});
+
+const button = document.getElementById("btn");
+button.addEventListener("click", function(){ //when users press on th keybord the function is un 
+	  if (addTextFromInput.value != "") {//if the addTextFromInput.value not NULL (true) 
+			 tasks.push(creat_task(addTextFromInput.value));//take the task from the creat_task and put it in the tasks
+             let div = document.getElementById('task');
+             let p = document.createElement('p');
+             p.innerHTML = addTextFromInput.value;
+             div.appendChild(p);
+	  }
+	    addTextFromInput.value = "";//when the user press Enter the input box = NULL
+        countActiveTask();
 });
 
 const shapeForChangeMode =document.getElementById("change_mode"); 
@@ -23,11 +40,11 @@ shapeForChangeMode.addEventListener("click",()=>{
     shape.classList.toggle("light_mode");
     console.log("holle");
     var image = document.getElementById("myImage");
-    if (image.src.match("266998931_1061886381053204_303416707441577145_n.jpg")) {
-        image.src = "WhatsApp Image 2021-12-17 at 7.55.43 AM.jpeg";
+    if (image.src.match("img/background-img-light.png")) {
+        image.src = "img/background-img-dark.png";
     }
     else {
-        image.src = "266998931_1061886381053204_303416707441577145_n.jpg";
+        image.src = "img/background-img-light.png";
     }
 
 
@@ -61,9 +78,3 @@ for(let i=0;tasks.length;i++){
 
 const taskCompleted=document.getElementById("clear");
 taskCompleted.addEventListener("click",clean);
-
-
-
-
-
-
