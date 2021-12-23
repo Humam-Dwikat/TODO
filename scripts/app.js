@@ -38,7 +38,6 @@ const shapeForChangeMode =document.getElementById("change_mode");
 shapeForChangeMode.addEventListener("click",()=>{
 	let shape =document.body;
     shape.classList.toggle("light_mode");
-    console.log("holle");
     var image = document.getElementById("myImage");
     if (image.src.match("img/background-img-light.png")) {
         image.src = "img/background-img-dark.png";
@@ -55,7 +54,7 @@ function countActiveTask() {
     let CounterTasks = 0;
 
     for (let i = 0; i < tasks.length; i++) {
-        if (!tasks[i].iscompleted) {
+        if (tasks[i].iscompleted=="false") {
             CounterTasks += 1;
         }
 		
@@ -69,8 +68,8 @@ function clean(){
 
 for(let i=0;tasks.length;i++){
     
-    if(tasks[i].iscompleted){
-         delete tasks[i];
+    if(tasks[i].iscompleted=="true"){
+          tasks[i].iscompleted="cleare";
     
 }
 
@@ -78,3 +77,4 @@ for(let i=0;tasks.length;i++){
 
 const taskCompleted=document.getElementById("clear");
 taskCompleted.addEventListener("click",clean);
+
