@@ -3,12 +3,12 @@ function creat_task(text){
     //this fuction take text and return task
 	let task={
 		"text":text,
-		"iscompleted":1
+		"iscompleted":0
 	}
 	return task;
     //1=active 
     //0=completed
-    //-1=clear completed
+    
 }
 const addTextFromInput = document.getElementById("input");
 //get id input from html 
@@ -78,18 +78,18 @@ function countActiveTask() {
     }
 
 }
+
 function clean(){
 
 for(let i=0;i<tasks.length;i++){
     
     if(!tasks[i].iscompleted){
          
-          tasks[i].iscompleted=-1;
-           
+          tasks[i].iscompleted=0;
+            
 }
 
 }}
-
 
 const taskCompleted=document.getElementById("clear");
 taskCompleted.addEventListener("click",clean);
