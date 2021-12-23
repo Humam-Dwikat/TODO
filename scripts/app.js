@@ -1,35 +1,49 @@
 let tasks = [];
-function creat_task(text){//this fuction take text and return task
+function creat_task(text){
+    //this fuction take text and return task
 	let task={
 		"text":text,
-		"iscompleted":"false"
+		"iscompleted":1
 	}
 	return task;
+    //1=active 
+    //0=completed
+    //-1=clear completed
 }
-const addTextFromInput = document.getElementById("input");//get id input from html 
-addTextFromInput.addEventListener("keypress", (e) => { //when users press on th keybord the function is un 
-	if (e.key == "Enter") {// if user press Enter (true)
-	  if (addTextFromInput.value != "") {//if the addTextFromInput.value not NULL (true) 
-			 tasks.push(creat_task(addTextFromInput.value));//take the task from the creat_task and put it in the tasks
+const addTextFromInput = document.getElementById("input");
+//get id input from html 
+addTextFromInput.addEventListener("keypress", (e) => { 
+    //when users press on th keybord the function is un 
+	if (e.key == "Enter") {
+        // if user press Enter (true)
+	  if (addTextFromInput.value != "") {
+          //if the addTextFromInput.value not NULL (true) 
+			 tasks.push(creat_task(addTextFromInput.value));
+             //take the task from the creat_task and put it in the tasks
              let div = document.getElementById('task');
              let p = document.createElement('p');
              p.innerHTML = addTextFromInput.value;
              div.appendChild(p);
 	  }
-	    addTextFromInput.value = "";//when the user press Enter the input box = NULL
+	    addTextFromInput.value = "";
+        //when the user press Enter the input box = NULL
 	}countActiveTask();
 });
 
 const button = document.getElementById("btn");
-button.addEventListener("click", function(){ //when users press on th keybord the function is un 
-	  if (addTextFromInput.value != "") {//if the addTextFromInput.value not NULL (true) 
-			 tasks.push(creat_task(addTextFromInput.value));//take the task from the creat_task and put it in the tasks
+button.addEventListener("click", function(){ 
+    //when users press on th keybord the function is un 
+	  if (addTextFromInput.value != "") {
+          //if the addTextFromInput.value not NULL (true) 
+			 tasks.push(creat_task(addTextFromInput.value));
+             //take the task from the creat_task and put it in the tasks
              let div = document.getElementById('task');
              let p = document.createElement('p');
              p.innerHTML = addTextFromInput.value;
              div.appendChild(p);
 	  }
-	    addTextFromInput.value = "";//when the user press Enter the input box = NULL
+	    addTextFromInput.value = "";
+        //when the user press Enter the input box = NULL
         countActiveTask();
 });
 
@@ -54,7 +68,7 @@ function countActiveTask() {
     let CounterTasks = 0;
 
     for (let i = 0; i < tasks.length; i++) {
-        if (tasks[i].iscompleted=="false") {
+        if (tasks[i].iscompleted) {
             CounterTasks += 1;
         }
 		
@@ -66,14 +80,16 @@ function countActiveTask() {
 }
 function clean(){
 
-for(let i=0;tasks.length;i++){
+for(let i=0;i<tasks.length;i++){
     
-    if(tasks[i].iscompleted=="true"){
-          tasks[i].iscompleted="cleare";
-    
+    if(!tasks[i].iscompleted){
+         
+          tasks[i].iscompleted=-1;
+           
 }
 
 }}
+
 
 const taskCompleted=document.getElementById("clear");
 taskCompleted.addEventListener("click",clean);
