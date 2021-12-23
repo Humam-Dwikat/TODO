@@ -32,7 +32,6 @@ body {
     display:inline-flex;
     border:2px solid #25273c;
     background-color: #25273c;
-    border-radius: 8px;
     font-size: 90%;
 }
 .three_function{/* put spaces between the founctions name*/
@@ -59,4 +58,12 @@ input{
     color:black;
 
 
+}
+
+.tasks-list {
+    border:2px solid #25273c;
+    background-color: #25273c;
+    font-size: 90%;
+    width: 312px;
+    margin: auto;
 }
