@@ -3,7 +3,7 @@ function creat_task(text){
     //this fuction take text and return task
 	let task={
 		"text":text,
-		"iscompleted":0
+		"iscompleted":1
 	}
 	return task;
     //1=active 
@@ -83,14 +83,25 @@ function clean(){
 
 for(let i=0;i<tasks.length;i++){
     
-    if(!tasks[i].iscompleted){
-         
-          tasks[i].iscompleted=0;
-            
+     if(!tasks[i].iscompleted){
+          let complete = tasks.indexOf(tasks[i]);
+           remove(complete);
+           tasks[i].document.getElementById("task").innerHTML=" ";
+        }
+ 
+    }
+console.log(tasks);
 }
-
-}}
+function remove(complete) {
+tasks.splice(complete, 3); 
+    
+   
+}
 
 const taskCompleted=document.getElementById("clear");
 taskCompleted.addEventListener("click",clean);
 
+const all=document.getElementById("All");
+all.addEventListener("click",()=>{
+    console.log(tasks);
+})
