@@ -1,7 +1,3 @@
-
-
-  
-  
 * {
     margin: 0;
     padding: 0;
@@ -32,12 +28,10 @@ body {
     right: 50%;
 }
 
-
 .filter{/* put border and background color to box founction*/
     display:inline-flex;
     border:2px solid #25273c;
     background-color: #25273c;
-    border-radius: 8px;
     font-size: 90%;
 }
 .three_function{/* put spaces between the founctions name*/
@@ -47,7 +41,6 @@ body {
 }
 input{
     background-color: #25273c;
-   
 }
 
 .sun{
@@ -57,6 +50,9 @@ input{
     color: white;
 
 }
+
+
+
 .light_mode{
     background-color:white;
     color:black;
