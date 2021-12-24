@@ -86,14 +86,14 @@ for(let i=0;i<tasks.length;i++){
      if(!tasks[i].iscompleted){
           let complete = tasks.indexOf(tasks[i]);
            remove(complete);
-           tasks[i].document.getElementById("task").innerHTML=" ";
+         
         }
  
     }
-console.log(tasks);
+
 }
 function remove(complete) {
-tasks.splice(complete, 3); 
+tasks.splice(complete, 10); 
     
    
 }
