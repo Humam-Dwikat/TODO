@@ -101,7 +101,3 @@ tasks.splice(complete, 10);
 const taskCompleted=document.getElementById("clear");
 taskCompleted.addEventListener("click",clean);
 
-const all=document.getElementById("All");
-all.addEventListener("click",()=>{
-    console.log(tasks);
-})
