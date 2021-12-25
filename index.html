@@ -4,23 +4,24 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style/main.css">
+    <link rel="stylesheet" href="style main.css">
     <title>Document</title>
     <script src="https://kit.fontawesome.com/42e8151cf5.js" crossorigin="anonymous"></script>
 </head>
 <body>
-    <div class="container" >
+    <div class="container">
         <img id="myImage" src="img/background-img-dark.png" alt="">
         <div class="image">
-            <h1>TODO</h1>
-            <div class="sun">
-            <i id="change_mode" class="fas fa-sun"></i>
-            </div>
-        </div>
-        
-        <div class="create">
+            <h1 class="h1">TODO</h1>
+            <div class="sun"> 
+              <i id="change_mode" class="fas fa-sun"></i>
+            
+        //hala omar
+            </div> 
+        </div> 
+                <div class="create">
             <input type="text" class="addNewTask complete" id="input" placeholder="Create new to do">
-            <button id="btn">Add</button>
+            <button>Add</button>
         </div>
         <div class="tasks-list">
             <div id="task">
@@ -29,17 +30,17 @@
         </div>
         <div id="filter" class="filters">
             <div class="functions">
-                <div class="filter" >
+                <div class="filter" id="F">
                     <div class="function_count">
-                        <span class="counter">0</span>item left
+                        <p class="filter"><span class="counter">0&nbsp;</span>item left</p>
                     </div>
                     <div class="three_function">
-                        <p id="All" class="filter">All</p>
+                        <p id="All" class="filter">all</p>
                         <p id="active" class="filter">active</p>
                         <p id="complete" class="filter">complete</p>
                     </div>
-                    <div class="clear_tass">
-                        <p id="clear" class="clear_tasks">clear completed</p>
+                    <div class="clear_function">
+                        <p id="clear" class="filter">clear completed</p>
                     </div>
                 </div>
             </div>
@@ -48,6 +49,6 @@
     <footer>
         <p>Drag and Drop to reorder list</p>
     </footer>
-    <script src="scripts/app.js"></script>
+    <script src="scriptsapp.js"></script>
 </body>
 </html>
