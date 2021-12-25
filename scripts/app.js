@@ -8,7 +8,6 @@ function creat_task(text){
 	return task;
     //1=active 
     //0=completed
-    
 }
 const addTextFromInput = document.getElementById("input");
 //get id input from html 
@@ -20,51 +19,70 @@ addTextFromInput.addEventListener("keypress", (e) => {
           //if the addTextFromInput.value not NULL (true) 
 			 tasks.push(creat_task(addTextFromInput.value));
              //take the task from the creat_task and put it in the tasks
-             let div = document.getElementById('task');
-             let p = document.createElement('p');
-             p.innerHTML = addTextFromInput.value;
-             div.appendChild(p);
+             //Humam and Hani
+             const tasks_list = document.getElementById('tasks-list');
+            let task = document.createElement("div");
+            //task div start
+            //put div in tasks-list
+            task.classList.toggle("task");
+            //div take a class
+            let text=document.createElement("p");
+            //put in new div a paragraph
+            text.textContent = addTextFromInput.value;
+            //put the paragraph in addTextFromInput in the text
+            const check = document.createElement('div');
+            //creat a new div 
+            check.classList.toggle("checkBox");
+            //div has a class
+            task.appendChild(check);
+            //put the div(check) in the ((task)= task div)
+            task.appendChild(text);
+            //put the paragraph(text) in the ((task)= task div)
+             //task div end
+            tasks_list.appendChild(task);
+            //put the task(check,text) in the tasks_list
+
+           
 	  }
 	    addTextFromInput.value = "";
         //when the user press Enter the input box = NULL
 	}countActiveTask();
 });
-
+//Hani
 const button = document.getElementById("btn");
 button.addEventListener("click", function(){ 
     //when users press on th keybord the function is un 
-	
-	//hala omar
-	 var taskslist = document.querySelector(".tasks-list");
-    tasks.forEach(X => {
-
-        var Task = document.createElement("div");
-        Task.setAttribute("id" , "taks");
-        Task.appendChild(document.createTextNode(X.text));
-        var Input = document.createElement("input");
-        Input.setAttribute("type" , "checkbox");
-        if(X.iscompleted)Input.setAttribute("checked" , "");
-        Task.appendChild(Input);
-        taskslist.appendChild(Task);
-        
-    })
-}
 	  if (addTextFromInput.value != "") {
           //if the addTextFromInput.value not NULL (true) 
-			 tasks.push(creat_task(addTextFromInput.value));
-             //take the task from the creat_task and put it in the tasks
-             let div = document.getElementById('task');
-             let p = document.createElement('p');
-             p.innerHTML = addTextFromInput.value;
-             div.appendChild(p);
+            tasks.push(creat_task(addTextFromInput.value));
+             //Humam and Hani
+            const tasks_list = document.getElementById('tasks-list');
+            let task = document.createElement("div");
+            //task div start
+            //put div in tasks-list
+            task.classList.toggle("task");
+            //div take a class
+            let text=document.createElement("p");
+            //put in new div a paragraph
+            text.textContent = addTextFromInput.value;
+            //put the paragraph in addTextFromInput in the text
+            const check = document.createElement('div');
+            //creat a new div 
+            check.classList.toggle("checkBox");
+            //div has a class
+            task.appendChild(check);
+            //put the div(check) in the ((task)= task div)
+            task.appendChild(text);
+            //put the paragraph(text) in the ((task)= task div)
+             //task div end
+            tasks_list.appendChild(task);
+            //put the task(check,text) in the tasks_list
 	  }
 	    addTextFromInput.value = "";
         //when the user press Enter the input box = NULL
         countActiveTask();
 });
-
 const shapeForChangeMode =document.getElementById("change_mode"); 
-
 shapeForChangeMode.addEventListener("click",()=>{
 	let shape =document.body;
     shape.classList.toggle("light_mode");
@@ -75,45 +93,38 @@ shapeForChangeMode.addEventListener("click",()=>{
     else {
         image.src = "img/background-img-light.png";
     }
-
-
 });
+const checked=document.querySelector('.checkBok');
+checked.addEventListener("click",(e)=>{
+    check.classList.toggle("checked");
+
+    
+
+
+})
+//Humam
 function countActiveTask() {
-   
+    //this function counter the tasks active 
     let counter = document.querySelectorAll(".counter");
     let CounterTasks = 0;
-
     for (let i = 0; i < tasks.length; i++) {
         if (tasks[i].iscompleted) {
+            //if status of tasks[i] =1= active 
             CounterTasks += 1;
         }
-		
     }
     for (let j = 0; j < counter.length; j++) {
         counter[j].innerHTML = CounterTasks;
     }
-
 }
-
+//Humam
 function clean(){
-
+//this function  to cleaner for tasks completed
 for(let i=0;i<tasks.length;i++){
-    
      if(!tasks[i].iscompleted){
-          let complete = tasks.indexOf(tasks[i]);
-           remove(complete);
-         
+        delete tasks[i];
         }
- 
-    }
-
+    }   
 }
-function remove(complete) {
-tasks.splice(complete, 10); 
-    
-   
-}
-
 const taskCompleted=document.getElementById("clear");
 taskCompleted.addEventListener("click",clean);
-
