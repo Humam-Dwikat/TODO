@@ -1,69 +1,93 @@
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 .container{
-    position: relative;
- 
-     
+  position: relative;
+
+   
 }
 .container >img {
-    width: 100%;
+  width: 100%;
 }
 body {
-    background-color: #181824;
-    color: white;
-    margin: 0;
-    padding: 0;
-    text-align: center;  
-     
+  background-color: #181824;
+  color: white;
+  margin: 0;
+  padding: 0;
+  text-align: center;  
+   
 }
 
 
 .image{
-    margin-top: 20px;
-    position:absolute;
-    top: 50%;
-    right: 50%;
+  margin-top: 20px;
+  top: 50%;
+  right: 50%;
+  display: inline-block;
+
 }
 
 .filter{/* put border and background color to box founction*/
-    display:inline-flex;
-    border:2px solid #25273c;
-    background-color: #25273c;
-    font-size: 90%;
+  display:inline-flex;
+  border:2px solid #25273c;
+  background-color: #25273c;
+  font-size: 90%;
 }
 .three_function{/* put spaces between the founctions name*/
-    margin-left: 30px;
-    margin-right: 20px;  
-    background-color: #25273c;
+  margin-left: 30px;
+  margin-right: 20px;  
+  background-color: #25273c;
 }
 input{
-    background-color: #25273c;
+  background-color: #25273c;
+  display: inline-block;
+  
 }
 
 .sun{
-    margin: -1px;
-    padding: 20px;
-    margin-left: 219px;
-    color: white;
+  margin: -1px;
+  padding: 20px;
+  margin-left: 219px;
+  color: white;
+  display: inline-block;
 
 }
 
 
 
 .light_mode{
-    background-color:white;
-    color:black;
+  background-color:white;
+  color:black;
 
 
 }
 
 .tasks-list {
-    border:2px solid #25273c;
-    background-color: #25273c;
-    font-size: 90%;
-    width: 312px;
-    margin: auto;
+  border:2px solid #25273c;
+  background-color: #25273c;
+  font-size: 90%;
+  width: 312px;
+  margin: auto;
+  display: inline-block;
+
+  
+
+}
+
+.task
+{
+  color : white;
+  display: inline-block;
+  padding: 20px;
+
+}
+.image> h1{
+display: inline-block;
+margin-right: 80px;
+
+}
+.create{
+    margin-bottom: 37px;
 }
