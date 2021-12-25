@@ -94,14 +94,6 @@ shapeForChangeMode.addEventListener("click",()=>{
         image.src = "img/background-img-light.png";
     }
 });
-const checked=document.querySelector('.checkBok');
-checked.addEventListener("click",(e)=>{
-    check.classList.toggle("checked");
-
-    
-
-
-})
 //Humam
 function countActiveTask() {
     //this function counter the tasks active 

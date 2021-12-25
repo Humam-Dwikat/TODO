@@ -50,6 +50,7 @@ input{
     background-color:white;
     color:black;
 }
+/* Humam */
 .tasksContainer {
 border-radius: 3%;
 width:312px ;
@@ -66,7 +67,7 @@ margin: auto;
     margin: auto;
     
 }
-
+/* Humam */
 .task {
    border-bottom:1px solid white ;
    display: flex;
@@ -79,7 +80,4 @@ margin: auto;
     border:1px solid grey;
    margin-right: 15px;
 
-}
-.checked{
-    background-image: url("img/icon-moon.svg");
 }
