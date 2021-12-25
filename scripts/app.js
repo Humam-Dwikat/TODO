@@ -33,6 +33,22 @@ addTextFromInput.addEventListener("keypress", (e) => {
 const button = document.getElementById("btn");
 button.addEventListener("click", function(){ 
     //when users press on th keybord the function is un 
+	
+	//hala omar
+	 var taskslist = document.querySelector(".tasks-list");
+    tasks.forEach(X => {
+
+        var Task = document.createElement("div");
+        Task.setAttribute("id" , "taks");
+        Task.appendChild(document.createTextNode(X.text));
+        var Input = document.createElement("input");
+        Input.setAttribute("type" , "checkbox");
+        if(X.iscompleted)Input.setAttribute("checked" , "");
+        Task.appendChild(Input);
+        taskslist.appendChild(Task);
+        
+    })
+}
 	  if (addTextFromInput.value != "") {
           //if the addTextFromInput.value not NULL (true) 
 			 tasks.push(creat_task(addTextFromInput.value));
