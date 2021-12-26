@@ -24,7 +24,7 @@ body {
 }
 .filter{/* put border and background color to box founction*/
     display:inline-flex;
-    border:2px solid #25273c;
+    border:1px solid #25273c;
     background-color: #25273c;
     font-size: 80%;
     width: 100%;
@@ -32,13 +32,22 @@ body {
 
 }
 .three_function{/* put spaces between the founctions name*/
-    margin-left: 40px;
-    margin-right: 35px;  
+    margin-left: 44px;
+    margin-right: 50px;  
     background-color: #25273c;
     display: flex;
 }
 input{
     background-color: #25273c;
+    color: whitesmoke;
+    width: 266px;
+    padding: 5px;
+
+}
+#btn{
+    padding: 5px;
+    background-color: #25273c;
+    color: white;
 }
 .sun{
     margin: -1px;
@@ -55,23 +64,26 @@ input{
 border-radius: 3%;
 width:312px ;
 margin: auto;
- overflow: hidden;
+overflow: hidden;
+margin-top: 8px;
 
 }
 #tasks-list {
    
-    border:2px solid #25273c;
+    border:1px solid #25273c;
     background-color: #25273c;
     font-size: 90%;
     width: 100%;
     margin: auto;
+    padding: 10px;
     
 }
 /* Humam */
 .task {
-   border-bottom:1px solid white ;
+   border-bottom:2px solid rgb(66, 65, 65) ;
    display: flex;
    padding: 10px;
+   
 }
 .checkBox{
     width: 15px;
