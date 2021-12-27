@@ -2,6 +2,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: "Josefin Sans", sans-serif;
 }
 .container{
     position: relative;
@@ -10,6 +11,9 @@
     width: 100%;
 }
 body {
+    background-image: url("/img/background-img-dark.png");
+    background-size: cover;
+    background-repeat: no-repeat;
     background-color: #181824;
     color: white;
     margin: 0;
@@ -17,10 +21,13 @@ body {
     text-align: center;  
 }
 .image{
-    margin-top: 20px;
-    position:absolute;
-    top: 50%;
-    right: 50%;
+    /* position:fixed; */
+    padding: 50px;
+    display: flex;
+    gap: 340px;
+    align-items: flex-start;
+    margin: auto;
+    width: 30%;
 }
 .filter{/* put border and background color to box founction*/
     display:inline-flex;
@@ -28,8 +35,6 @@ body {
     background-color: #25273c;
     font-size: 80%;
     width: 100%;
-   
-
 }
 .three_function{/* put spaces between the founctions name*/
     margin-left: 44px;
@@ -42,22 +47,15 @@ input{
     color: whitesmoke;
     width: 266px;
     padding: 5px;
-
 }
 #btn{
     padding: 5px;
     background-color: #25273c;
     color: white;
 }
-.sun{
-    margin: -1px;
-    padding: 20px;
-    margin-left: 219px;
-    color: white;
-}
 .light_mode{
+    background-image: url("/img/background-img-light.png");
     background-color:white;
-    color:black;
 }
 /* Humam */
 .tasksContainer {
@@ -66,10 +64,8 @@ width:312px ;
 margin: auto;
 overflow: hidden;
 margin-top: 8px;
-
 }
 #tasks-list {
-   
     border:1px solid #25273c;
     background-color: #25273c;
     font-size: 90%;
@@ -83,7 +79,6 @@ margin-top: 8px;
    border-bottom:2px solid rgb(66, 65, 65) ;
    display: flex;
    padding: 10px;
-   
 }
 .checkBox{
     width: 15px;
@@ -91,5 +86,4 @@ margin-top: 8px;
     border-radius: 50%;
     border:1px solid grey;
    margin-right: 15px;
-
 }
