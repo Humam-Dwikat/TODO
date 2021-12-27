@@ -20,7 +20,7 @@ addTextFromInput.addEventListener("keypress", (e) => {
 			 tasks.push(creat_task(addTextFromInput.value));
              //take the task from the creat_task and put it in the tasks
              //Humam and Hani
-             const tasks_list = document.getElementById('tasks-list');
+            const tasks_list = document.getElementById('tasks-list');
             let task = document.createElement("div");
             //task div start
             //put div in tasks-list
@@ -41,8 +41,6 @@ addTextFromInput.addEventListener("keypress", (e) => {
              //task div end
             tasks_list.appendChild(task);
             //put the task(check,text) in the tasks_list
-
-           
 	  }
 	    addTextFromInput.value = "";
         //when the user press Enter the input box = NULL
@@ -86,12 +84,12 @@ const shapeForChangeMode =document.getElementById("change_mode");
 shapeForChangeMode.addEventListener("click",()=>{
 	let shape =document.body;
     shape.classList.toggle("light_mode");
-    var image = document.getElementById("myImage");
-    if (image.src.match("img/background-img-light.png")) {
-        image.src = "img/background-img-dark.png";
+    let icon = document.getElementById("change_mode");
+    if (icon.src.match("/img/icon-moon.svg")){
+        icon.src = "/img/icon-sun.svg";
     }
     else {
-        image.src = "img/background-img-light.png";
+        icon.src = "/img/icon-moon.svg";
     }
 });
 //Humam
