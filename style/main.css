@@ -7,21 +7,18 @@
 .container{
     position: relative;
 }
-.container >img {
-    width: 100%;
-}
 body {
     background-image: url("/img/background-img-dark.png");
-    background-size: cover;
+    background-size: 100% 240px;
     background-repeat: no-repeat;
     background-color: #181824;
     color: white;
     margin: 0;
     padding: 0;
-    text-align: center;  
+    text-align: center;
+    min-height: 100%;
 }
 .image{
-    /* position:fixed; */
     padding: 50px;
     display: flex;
     gap: 340px;
@@ -72,7 +69,6 @@ margin-top: 8px;
     width: 100%;
     margin: auto;
     padding: 10px;
-    
 }
 /* Humam */
 .task {
