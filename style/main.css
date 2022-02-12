@@ -31,7 +31,7 @@ body {
     border:1px solid #25273c;
     background-color: #25273c;
     font-size: 80%;
-    width: 100%;
+    width: 100%; 
 }
 .three_function{/* put spaces between the founctions name*/
     margin-left: 44px;
@@ -45,13 +45,15 @@ body {
 input{
     background-color: #25273c;
     color: whitesmoke;
-    width: 290px;
+    width: 285px;
     padding: 5px;
 }
 #btn{
-    padding: 5px;
+    padding: 3px;
     background-color: #25273c;
     color: white;
+   
+    
 }
 .light_mode{
     background-image: url("/img/background-img-light.png");
@@ -89,4 +91,11 @@ margin-top: 8px;
 footer{
     margin: 8px;
     color: gray;
+}
+.create{
+    border: 6px #25273c;
+    background-color: #25273c;
+    width: 340px;
+    margin: auto;
+    height: 38px;
 }
